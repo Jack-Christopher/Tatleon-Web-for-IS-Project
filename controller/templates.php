@@ -11,7 +11,7 @@ function print_header($title, $css_file, $js_file, $icon_file)
     //  agregar archivo css
     if ($css_file != '') 
     {
-        echo '<link rel="stylesheet" href="resources\\css\\' . $css_file .'.css">';
+        echo '<link rel="stylesheet" href="resources\\css\\' . $css_file .'">';
     }
     // agregar archivo bootstrap
     echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -19,12 +19,12 @@ function print_header($title, $css_file, $js_file, $icon_file)
     // agregar icono
     if ($icon_file != '') 
     {
-        echo '<link rel="icon" href="public\\' . $icon_file . '.ico">';
+        echo '<link rel="icon" href="public\\' . $icon_file . '">';
     }
     // agregar archivo js
     if ($js_file != '') 
     {
-        echo '<script src="resources\\js\\' . $js_file .'.js"></script>';
+        echo '<script src="resources\\js\\' . $js_file .'"></script>';
     }
     echo '</head>';
 }
