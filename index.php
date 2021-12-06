@@ -16,7 +16,7 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link active" aria-current="page" href="index.php">Inicio</a></li>
-                    <li><a class="nav-link" href="resources/views/services.php">Funcionalidades</a></li>
+                    <li><a class="nav-link" href="resources/views/services.php">Servicios</a></li>
                     <li><a class="nav-link" href="resources/views/support.php">Soporte</a></li>
                     <li><a class="nav-link" href="resources/views/about.php">Acerca </a></li>                    
                 </ul>
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
-                    <a class="nav-link" href="resources/views/services.php">Funcionalidades</a>
+                    <a class="nav-link" href="resources/views/services.php">Servicios</a>
                     <a class="nav-link" href="resources/views/support.php">Soporte</a>
                     <a class="nav-link" href="resources/views/about.php">Acerca </a>
                 </div>
