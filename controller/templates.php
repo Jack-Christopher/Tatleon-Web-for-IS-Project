@@ -1,5 +1,4 @@
 <?php
-
 function print_header($title, $css_path, $js_path, $icon_path)
 {
     echo '<html lang="es">';
