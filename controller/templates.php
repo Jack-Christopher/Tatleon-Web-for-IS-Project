@@ -1,6 +1,6 @@
 <?php
 
-function print_header($title, $css_file, $js_file, $icon_file)
+function print_header($title, $css_path, $js_path, $icon_path)
 {
     echo '<html lang="es">';
     echo '<head>';
@@ -8,19 +8,19 @@ function print_header($title, $css_file, $js_file, $icon_file)
     echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
     echo '<title>' . $title .'</title>';
     //  agregar archivo css
-    if ($css_file != '') 
+    if ($css_path != '') 
     {
-        echo '<link rel="stylesheet" href="resources\\css\\' . $css_file .'">';
+        echo '<link rel="stylesheet" href="' . $css_path .'">';
     }
     // agregar icono
-    if ($icon_file != '') 
+    if ($icon_path != '') 
     {
-        echo '<link rel="icon" href="public\\' . $icon_file . '">';
+        echo '<link rel="icon" href="' . $icon_path . '">';
     }
     // agregar archivo js
-    if ($js_file != '') 
+    if ($js_path != '') 
     {
-        echo '<script src="resources\\js\\' . $js_file .'"></script>';
+        echo '<script src="' . $js_path .'"></script>';
     }
     // agregar archivo bootstrap
     echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
