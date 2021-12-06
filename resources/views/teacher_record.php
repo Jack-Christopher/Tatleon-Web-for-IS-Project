@@ -91,7 +91,7 @@
     if (isset($_SESSION['user'])) 
     {
         $user = $_SESSION['user'];
-        if ($user->getPermisos() == Administrador || $user['permisos'] == Docente)  
+        if ($user->permisos == Administrador || $user->permisos == Docente)  
         {
           echo "<div class='container'>";
           echo "<a href='add_comment.php?nombres=" . $docente['nombres'] . "&apellidos=" . $docente['apellidos'] . "' class='btn btn-secondary'>Agregar Comentario</a>";
