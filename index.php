@@ -1,4 +1,17 @@
-<?php require_once('controller/templates.php'); ?>
+<?php 
+    require_once('controller/templates.php'); 
+    require_once('database/conexion.php');
+    session_start();
+    
+    if (isset($_GET['logout'])) 
+    {
+        if ($_GET['logout'] == "true") 
+        {
+          session_destroy();
+          header("Location: index.php");
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html>
@@ -40,7 +53,28 @@
     </div>
 
 
+    <?php
+    if (isset($_SESSION['id'])) 
+    {
+        $Conn =  new Conexion;
+        $Conn->conectar();
+        $nombre_sql = "SELECT nombres FROM usuarios WHERE id = '".$_SESSION['id']."'";
+        $row = $Conn->ejecutar($nombre_sql)->fetch_array();
+        $nombre = $row['nombres'];
 
+        echo "<br>";
+        echo "<div class=\"container\" align=\"center\">";
+        echo "<h3 class=\"display-2\" > Bienvenido(a) " . $nombre . "</h3>";
+        echo "</div>";
+    }
+    else 
+    {
+        echo "<div class=\"container\" align=\"center\">";
+        echo "<a href=\"resources/views/login.php\" class=\"btn btn-outline-primary\" id=\"btn_login\" style=\"margin:3%;\"> Iniciar Sesión </a>";
+        echo "<a href=\"resources/views/register.php\" class=\"btn btn-outline-success\" id=\"btn_register\" style=\"margin:3%;\"> Registrarse </a>";
+        echo "</div>";
+    }
+    ?>
 
 
     <!-- Servicios -->
@@ -50,9 +84,9 @@
     <div class="container" id="button_box">
         <br><br>
         <div class="container" align="center">
-            <a href="#" class="btn btn-primary index_button"> Repositorio de Enlaces</a>
-            <a href="#" class="btn btn-danger index_button"> Registro de Docentes</a>
-            <a href="#" class="btn btn-warning index_button"> Recursos Compartidos</a>
+            <a href="resources/views/link_repository.php" class="btn btn-primary index_button"> Repositorio de Enlaces</a>
+            <a href="resources/views/teacher_record.php" class="btn btn-danger index_button"> Registro de Docentes</a>
+            <a href="resources/views/shared_resources.php" class="btn btn-warning index_button"> Recursos Compartidos</a>
             <br>
             <a href="#" class="btn btn-primary index_button"> Coming soon... </a>
             <a href="#" class="btn btn-danger index_button"> Coming soon... </a>
@@ -69,14 +103,24 @@
     <div class="container" style="display: block;">
         Made by
         <img src="resources/img/equipo_logo.jpg" alt="The Delta Team Logo" id="TDT_logo">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <?php
+        if (isset($_SESSION['id'])) 
+        {
+            echo "<button class='btn btn-dark' id='logout_button' onclick='logout()'> Cerrar Sesion</button>";
+        }
+        ?>
     </div>
 
 
 </body>
 
 
-
-
-
-
 </html>
+
+<script>
+  function logout() 
+  {
+    location.href = "index.php?logout=true";
+  }
+</script>
