@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Repositorio de Enlaces', '', '', 'favicon.ico'); ?>
+<?php print_header('Repositorio de Enlaces', '', '', '../../public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->

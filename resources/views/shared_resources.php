@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Recursos Compartidos', '', '', 'favicon.ico'); ?>
+<?php print_header('Recursos Compartidos', '', '', '../../public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->

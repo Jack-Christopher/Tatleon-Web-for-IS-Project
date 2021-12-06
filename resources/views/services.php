@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Servicios', '', '', 'favicon.ico'); ?>
+<?php print_header('Servicios', '', '', '../../public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->

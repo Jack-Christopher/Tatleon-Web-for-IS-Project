@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Acerca', '', '', 'favicon.ico'); ?>
+<?php print_header('Acerca', '', '', '../../public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->

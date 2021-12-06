@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Registro de Docentes', '', '', 'favicon.ico'); ?>
+<?php print_header('Registro de Docentes', '', '', '../../public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->
