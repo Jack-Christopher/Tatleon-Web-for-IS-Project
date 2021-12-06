@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Tatleon Web', 'index.css', '', 'favicon.ico'); ?>
+<?php print_header('Tatleon Web', 'resources/css/index.css', '', 'public/favicon.ico'); ?>
 
 <body>
     <!-- Navbar con las opciones principales -->
