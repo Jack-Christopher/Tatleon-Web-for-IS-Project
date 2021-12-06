@@ -1,13 +1,13 @@
 <?php
     class User 
     {
-        private $id;
-        private $nombres;
-        private $apellidos;
-        private $email;
-        private $permisos;
-        private $username;
-        private $es_docente;
+        public $id;
+        public $nombres;
+        public $apellidos;
+        public $email;
+        public $permisos;
+        public $username;
+        public $es_docente;
 
         public function __construct($id, $nombres, $apellidos, $email, $permisos, $username, $es_docente)
         {
@@ -32,36 +32,6 @@
                 'username' => $this->username,
                 'es_docente' => $this->es_docente
             ];
-        }
-
-
-        public function getId()
-        {
-            return $this->id;
-        }
-        public function getNombres()
-        {
-            return $this->nombres;
-        }
-        public function getApellidos()
-        {
-            return $this->apellidos;
-        }
-        public function getEmail()
-        {
-            return $this->email;
-        }
-        public function getPermisos()
-        {
-            return $this->permisos;
-        }
-        public function getUsername()
-        {
-            return $this->username;
-        }
-        public function getEsDocente()
-        {
-            return $this->es_docente;
         }
     }
 
