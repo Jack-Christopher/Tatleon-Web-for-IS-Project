@@ -64,3 +64,8 @@
             return $this->es_docente;
         }
     }
+
+
+    define('Administrador', 1);
+    define('Docente', 2);
+    define('Estudiante', 3);
