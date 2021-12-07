@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Inicio de Sesión', '../css/login.css', '', 'favicon.ico'); ?>
+<?php print_header('Inicio de Sesión', '../css/login.css', '../js/login.js', 'favicon.ico'); ?>
 
 
 <body background="../img/blue_background.jpg" style="background-size: cover">
