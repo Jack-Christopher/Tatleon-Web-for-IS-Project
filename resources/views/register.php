@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Creación de Cuenta', '../css/login.css', '', 'favicon.ico'); ?>
+<?php print_header('Creación de Cuenta', '../css/login.css', '../js/register.js', 'favicon.ico'); ?>
 
 
 <body background="../img/blue_background.jpg" style="background-size: cover">
