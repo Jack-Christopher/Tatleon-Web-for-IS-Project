@@ -1,6 +1,7 @@
 <?php 
     require_once('controller/templates.php'); 
     require_once('database/conexion.php');
+    require_once('app/models/user.php');
     session_start();
     
     if (isset($_GET['logout'])) 
@@ -54,17 +55,23 @@
 
 
     <?php
-    if (isset($_SESSION['id'])) 
+    if (isset($_SESSION['user'])) 
     {
-        $Conn =  new Conexion;
-        $Conn->conectar();
-        $nombre_sql = "SELECT nombres FROM usuarios WHERE id = '".$_SESSION['id']."'";
-        $row = $Conn->ejecutar($nombre_sql)->fetch_array();
-        $nombre = $row['nombres'];
+        if (! $_SESSION['user']->id > 0)
+        {
+            $Conn =  new Conexion;
+            $Conn->conectar();
+            $usuario = "SELECT id, nombres, apellidos, email, clave, permisos, es_docente
+                FROM Usuarios WHERE username='" . $_SESSION['user']->username ."';";
+            $row = $Conn->ejecutar($usuario)->fetch_array();
+            $user = new User($row["id"], $row["nombres"], $row["apellidos"], $row["email"], 
+                $row["permisos"], $username, $row["es_docente"]);
+            $_SESSION['user'] = $user;
+        }
 
         echo "<br>";
         echo "<div class=\"container\" align=\"center\">";
-        echo "<h3 class=\"display-2\" > Bienvenido(a) " . $nombre . "</h3>";
+        echo "<h3 class=\"display-2\" > Bienvenido(a) " . $_SESSION['user']->nombres . "</h3>";
         echo "</div>";
     }
     else 
