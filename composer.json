@@ -4,6 +4,6 @@
     },
     
     "config": {
-        "vendor-dir": "controller/packages/vendor"
+        "vendor-dir": "packages/vendor"
     }
 }
