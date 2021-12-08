@@ -24,9 +24,21 @@ if (mysqli_num_rows($resultados) > 0)
     if ($verify) 
     {
         echo 0;
+        //from usuarios_escuela get all the schools where he studies
+        $escuelas = "SELECT UE.escuela_id as id, E.nombre 
+            FROM Usuario_Escuela UE, Escuelas E 
+            WHERE usuario_id =" . $row['id'] . " AND UE.escuela_id = E.id";
+        $resultados_escuelas = $conexion->ejecutar($escuelas);
+        $escuelas_array = array();
+        while ($row_escuelas = mysqli_fetch_array($resultados_escuelas)) 
+        {
+            $escuelas_array[] = $row_escuelas;
+        }
 
         $user = new User($row["id"], $row["nombres"], $row["apellidos"], $row["email"], 
             $row["permisos"], $username, $row["es_docente"]);
+        
+        $user->setEscuelasId($escuelas_array);
 
         $_SESSION["user"] = $user;
     } 
