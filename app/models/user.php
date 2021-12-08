@@ -8,6 +8,7 @@
         public $permisos;
         public $username;
         public $es_docente;
+        public $escuelas;
 
         public function __construct($id, $nombres, $apellidos, $email, $permisos, $username, $es_docente)
         {
@@ -18,6 +19,12 @@
             $this->permisos = $permisos;
             $this->username = $username;
             $this->es_docente = $es_docente;
+        }
+
+        // $escuelas_id array of numbers
+        public function setEscuelasId($escuelas)
+        {
+            $this->escuelas = $escuelas;
         }
 
         //getters
