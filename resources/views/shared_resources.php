@@ -116,7 +116,6 @@
             echo "<td>" . $curso['nombre'] . "</td>";
             echo "<td> ";
             echo "<a href=\"course.php?id=" . $curso['id'] . "\" class=\"btn btn-success\"> Explorar</a> ";
-            // echo "<a href=\"#\" class=\"btn btn-success\"> Explorar</a> ";
             echo "</td> </tr>";
           }
         }
