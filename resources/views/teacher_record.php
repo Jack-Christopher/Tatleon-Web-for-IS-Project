@@ -94,7 +94,7 @@
         if ($user->permisos == Administrador || $user->permisos == Docente)  
         {
           echo "<div class='container'>";
-          echo "<a href='add_comment.php?nombres=" . $docente['nombres'] . "&apellidos=" . $docente['apellidos'] . "' class='btn btn-secondary'>Agregar Comentario</a>";
+          echo "<a href='add_comment.php?id=" . $docente['id'] . "' class='btn btn-secondary'>Agregar Comentario</a>";
           echo "</div>";
           echo "<br><br>";
         }
