@@ -86,7 +86,7 @@
 
             echo "<td>" . $row['descripcion'] . "</td>";
 
-            echo "<td> <a href=\"" .  $row['url_content'] . "\" class=\"btn btn-success\"> Visitar</a> </td>";
+            echo "<td> <a href=\"" .  $row['url'] . "\" class=\"btn btn-success\"> Visitar</a> </td>";
             echo "</tr>";
           }
         }
@@ -117,7 +117,7 @@
         if ($escuela_propia) 
         {
             echo "<div class=\"container\" align=\"right\">";
-            echo "<a href=\"add_link.php\" class=\"btn btn-outline-success\"> Agregar enlace </a>";
+            echo "<a href=\"add_link.php?id=" . $escuela_id . "\" class=\"btn btn-outline-success\"> Agregar enlace </a>";
             echo "<br>";
             echo "</div>";
         }
