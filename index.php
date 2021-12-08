@@ -114,7 +114,7 @@
         <img src="resources/img/equipo_logo.jpg" alt="The Delta Team Logo" id="TDT_logo">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
-        if (isset($_SESSION['id'])) 
+        if (isset($_SESSION['user'])) 
         {
             echo "<button class='btn btn-dark' id='logout_button' onclick='logout()'> Cerrar Sesion</button>";
         }
