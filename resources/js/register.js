@@ -20,11 +20,7 @@ function formEsValido()
         var op = alertify.alert("Debe colocar sus apellidos.");
         return false;
     }
-    // else if (escuela.val() == "null") 
-    // {
-    //     var op = alertify.alert("Debe seleccionar una escuela.");
-    //     return false;
-    // }
+
     else if (correo_electronico.val() == "") 
     {
         var op = alertify.alert("Debe colocar su correo electrónico.");
