@@ -115,5 +115,6 @@ print_header($header);
 else  if (nombre_de_usuario.val() == "") 
 {
   var  op = alertify.alert("Debe colocar su nombre de usuario.");
+  
 ```
 
