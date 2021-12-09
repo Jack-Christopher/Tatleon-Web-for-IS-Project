@@ -1,12 +1,16 @@
 <?php 
     require_once('../../controller/templates.php'); 
     require_once('../../database/conexion.php');
+    require_once("../../app/models/header.php");
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Creación de Cuenta', '../css/login.css', '../js/register.js', 'favicon.ico'); ?>
+<?php 
+    $header = new Header('Creación de Cuenta', '../css/login.css', '../js/register.js', 'favicon.ico');
+    print_header($header);
+?>
 
 
 <body background="../img/blue_background.jpg" style="background-size: cover">

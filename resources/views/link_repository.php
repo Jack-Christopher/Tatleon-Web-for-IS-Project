@@ -1,12 +1,16 @@
 <?php 
     require_once('../../controller/templates.php'); 
     require_once('../../database/conexion.php');
+    require_once("../../app/models/header.php");
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Repositorio de Enlaces', '', '', '../../public/favicon.ico'); ?>
+<?php 
+    $header = new Header('Repositorio de Enlaces', '', '', '../../public/favicon.ico');
+    print_header($header);
+?>
 
 <body>
     <!-- Navbar con las opciones principales -->

@@ -1,9 +1,15 @@
-<?php require_once('../../controller/templates.php'); ?>
+<?php 
+  require_once('../../controller/templates.php'); 
+  require_once("../../app/models/header.php");
+?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Acerca', '', '', '../../public/favicon.ico'); ?>
+<?php 
+  $header = new Header('Acerca', '', '', '../../public/favicon.ico');
+  print_header($header);
+?>
 
 <body>
     <!-- Navbar con las opciones principales -->

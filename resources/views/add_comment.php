@@ -1,6 +1,7 @@
 <?php 
     require_once('../../controller/templates.php');
     require_once('../../app/models/user.php');
+    require_once("../../app/models/header.php");
     require_once('../../database/conexion.php');
     session_start();
 ?>
@@ -9,7 +10,10 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Agregar comentario', '../css/login.css', '../js/add_comment.js', '../../public/favicon.ico'); ?>
+<?php 
+    $header = new Header('Agregar comentario', '../css/login.css', '../js/add_comment.js', '../../public/favicon.ico');
+    print_header($header);
+?>
 
 
 

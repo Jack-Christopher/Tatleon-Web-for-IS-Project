@@ -1,9 +1,12 @@
 <?php 
     ini_set('session.gc_maxlifetime', 30*24*60*60);
     ini_set('session.cookie_lifetime', 30*24*60*60);
+
     require_once('controller/templates.php'); 
     require_once('database/conexion.php');
     require_once('app/models/user.php');
+    require_once('app/models/header.php');
+    
     session_start();
     
     if (isset($_GET['logout'])) 
@@ -19,7 +22,10 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Tatleon Web', 'resources/css/index.css', '', 'public/favicon.ico'); ?>
+<?php 
+    $header = new Header('Tatleon Web', 'resources/css/index.css', '', 'public/favicon.ico');
+    print_header($header); 
+?>
 
 <body>
     <!-- Navbar con las opciones principales -->
