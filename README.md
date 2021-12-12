@@ -35,7 +35,7 @@ Que son el título y la ubicación de los archivos necesarios.
 | ----------- | ----------- | ----------- |
 | Obtener atributo ID disponible | Usuario con id=5 | 5|
 | Obtener atributo nombre disponible | Usuario con nombre=Jack Christopher | Jack Christopher |
-| Obtener atributo email disponible | Usuario con email=jack@gmail.com | jhuaihuah@unsa.edu.pe|
+| Obtener atributo email disponible | Usuario con email=jack@gmail.com | jack@gmail.com |
 | Obtener atributo nombre de usuario disponible | Usuario con nombre de usuario=JC | JC|
 | Obtener atributo no existente telefono | Usuario cualquiera | null|
 | Obtener atributo no existente edad | Usuario cualquiera | null|
