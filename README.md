@@ -1,6 +1,6 @@
 # Casos de Prueba
 
-**Función** *print_header($header) :*
+## **Función** *print_header($header) :*
 $header es un parámetro de tipo Header que cuenta con 4 atributos:
 * private  $title;
 * private  $css_path;
@@ -19,7 +19,7 @@ Que son el título y la ubicación de los archivos necesarios.
 
 
 
-**Función** *getNombresCompletos()* de la clase User :
+## **Función** *getNombresCompletos()* de la clase User :
 
 | Caso de Prueba| Valor de Entrada| Resultado Esperado |
 | ----------- | ----------- | ----------- |
@@ -29,3 +29,14 @@ Que son el título y la ubicación de los archivos necesarios.
 | Nombres no disponibles y Apellidos disponibles | nombres=, apellidos=  | N, N|
 | Nombres y Apellidos no disponibles | nombres=, apellidos=  | N, N|
 
+
+## **Función** *getAtributo($atributo)* de la clase User :
+| Caso de Prueba| Valor de Entrada| Resultado Esperado |
+| ----------- | ----------- | ----------- |
+| Obtener atributo ID disponible | Usuario con id=5 | 5|
+| Obtener atributo nombre disponible | Usuario con nombre=Jack Christopher | Jack Christopher |
+| Obtener atributo email disponible | Usuario con email=jack@gmail.com | jhuaihuah@unsa.edu.pe|
+| Obtener atributo nombre de usuario disponible | Usuario con nombre de usuario=JC | JC|
+| Obtener atributo no existente telefono | Usuario cualquiera | null|
+| Obtener atributo no existente edad | Usuario cualquiera | null|
+| Obtener atributo no existente direccion | Usuario cualquiera | null|
