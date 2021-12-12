@@ -16,3 +16,16 @@ Que son el título y la ubicación de los archivos necesarios.
 | Solo Icono | Un objeto de tipo Header que solo tenga la ubicación al ícono | 1110 |
 | Completo  | Un objeto de tipo Header con todos sus atributos establecidos | 0 |
 | Vacio| Un objeto de tipo Header con ningún atributo establecido | 1111 |
+
+
+
+**Función** *getNombresCompletos()* de la clase User :
+
+| Caso de Prueba| Valor de Entrada| Resultado Esperado |
+| ----------- | ----------- | ----------- |
+| Nombres y Apellidos disponibles | nombres=Jack Christopher, apellidos= Huaihua Huayhua  | Huaihua Huayhua, Jack Christopher|
+| Nombres y Apellidos disponibles | nombres=Rodrigo Jesus, apellidos= Santisteban Pachari  | Santisteban Pachari, Rodrigo Jesus|
+| Nombres disponibles y Apellidos no disponibles | nombres=, apellidos=  | N, N|
+| Nombres no disponibles y Apellidos disponibles | nombres=, apellidos=  | N, N|
+| Nombres y Apellidos no disponibles | nombres=, apellidos=  | N, N|
+
