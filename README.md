@@ -24,6 +24,7 @@
 * Angel Tomas Concha Layme
 * Yober Maycol Mendoza Surco
 * Gabriela ángel chipana Perez
+* Juan Diego Valdivia Mendoza
 
 ***
 ***
