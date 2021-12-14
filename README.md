@@ -167,6 +167,9 @@ else  if (nombre_de_usuario.val() == "")
 ## Code Smells extras
 
 
+
+
+
 ### Constant names should comply with a naming convention
 
 >app/models/user.php
@@ -190,10 +193,15 @@ define('Estudiante', 3);
 <div class="container" align="center" style="padding:2%;">
 ```
 >resources/views/login.php
->
+
 ```html
 <body background="../img/blue_background.jpg" style="background-size: cover">
 ```
+```html
+<div class="container" align="center">
+```
+
+ En el análisis del resto de código , se presentan **Code Smells** basados en lo mismo.
 
 
 
@@ -221,7 +229,6 @@ cadena = $("#login_form").serialize();
 ```php
 cadena = $("#signup_form").serialize();
 ```
-
 
 
 # Casos de Prueba
