@@ -2,15 +2,15 @@ function formEsValido()
 {
     var codigo = $("#verification_code");
     var user_name = $("#username");
-
+    let op;
     if (codigo.val() == "") 
     {
-        var op = alertify.alert("Debe colocar su codigo de verificacion.");
+        op = alertify.alert("Debe colocar su codigo de verificacion.");
         return false;
     }
     else if (user_name.val() == "") 
     {
-        var op = alertify.alert("Debe haberse registrado previamente.");
+        op = alertify.alert("Debe haberse registrado previamente.");
         return false;
     }
 
@@ -24,8 +24,8 @@ $(document).ready(function()
     {
         if (formEsValido()) 
         {
-            cadena = $("#verification_form").serialize();
-
+            var cadena = $("#verification_form").serialize();
+            let op;
             $.ajax({
                 type: "POST",
                 url: '../../controller/verification.php',
@@ -52,7 +52,7 @@ $(document).ready(function()
                     } 
                     else if (data == 4) 
                     {
-                        var op = alertify.alert("El código de verificación es incorrecto.");
+                        op = alertify.alert("El código de verificación es incorrecto.");
                     }
                     else 
                     {
