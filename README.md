@@ -164,7 +164,7 @@ else  if (nombre_de_usuario.val() == "")
 ```
 
 
-## Code Smells extras
+## Otros Code Smells
 
 
 
