@@ -277,3 +277,9 @@ Que son el título y la ubicación de los archivos necesarios.
 | Obtener atributo no existente telefono | Usuario cualquiera | null|
 | Obtener atributo no existente edad | Usuario cualquiera | null|
 | Obtener atributo no existente direccion | Usuario cualquiera | null|
+
+## **Ejecución de Test Unitarios con PHPUnit**
+<img src="readme/headerTest.png">
+<img src="readme/userGetAttributeTest.png">
+<img src="readme/userGetFullNameTest.png">
+
