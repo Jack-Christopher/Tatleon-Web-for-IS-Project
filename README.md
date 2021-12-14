@@ -1,3 +1,33 @@
+# Laboratoro 07: Refactoring
+***
+* **Objetivo:** 
+    * Mejorar el entendimiento, la extensibilidad y reutilización de un proyecto de software
+
+* **Pre-requisito:**
+    * Proyecto de software escogido como proyecto final 
+    * Sonarqube
+
+* **Actividades:**
+    * Analisis estático de código con Sonarqube
+    * Identificar Code Smells
+    * Identificar código bajo análisis (candidato a ser refactorizado): clase, método, campo, lineas de código, ....
+    * Diseñar [e implementar] casos de prueba para códido bajo análisis 
+    * Aplicar una técnica de refactoring para cada code smell identificado
+    * Verificar y validar las refactorizaciones: Ejecutar pruebas.
+
+***
+***
+
+## Integrantes
+* Jack Christopher Huaihua Huayhua
+* Rodrigo Jesus Santisteban Pachari
+* Angel Tomas Concha Layme
+* Yober Maycol Mendoza Surco
+* Gabriela ángel chipana Perez
+
+***
+***
+
 ## Análisis con SonarQube
 
 <img src="https://raw.githubusercontent.com/Jack-Christopher/Tatleon-Web/Juan/Screenshot_Sonarqube.png">
@@ -282,4 +312,5 @@ Que son el título y la ubicación de los archivos necesarios.
 <img src="readme/headerTest.png">
 <img src="readme/userGetAttributeTest.png">
 <img src="readme/userGetFullNameTest.png">
+
 
