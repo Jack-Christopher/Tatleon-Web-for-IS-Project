@@ -2,7 +2,6 @@ function formEsValido()
 {
     var nombres = $("#name");
     var apellidos = $("#last_name");
-    // var escuela = $("#school");
     var correo_electronico = $("#e_mail");
     var nombre_de_usuario = $("#user_name");
     var clave_de_usuario = $("#password");
@@ -20,11 +19,7 @@ function formEsValido()
         var op = alertify.alert("Debe colocar sus apellidos.");
         return false;
     }
-    // else if (escuela.val() == "null") 
-    // {
-    //     var op = alertify.alert("Debe seleccionar una escuela.");
-    //     return false;
-    // }
+
     else if (correo_electronico.val() == "") 
     {
         var op = alertify.alert("Debe colocar su correo electrónico.");
@@ -85,7 +80,6 @@ $(document).ready(function()
                     else 
                     {
                         alertify.alert("No se pudo completar el proceso.");
-                        // alertify.alert(data);
                     }
                 }
             });
