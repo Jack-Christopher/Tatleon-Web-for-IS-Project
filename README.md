@@ -163,6 +163,68 @@ else  if (nombre_de_usuario.val() == "")
   
 ```
 
+
+## Code Smells extras
+
+
+### Constant names should comply with a naming convention
+
+>app/models/user.php
+
+- Rename this constant "Administrador" to match the regular expression
+
+```php
+define('Administrador', 1);
+define('Docente', 2);
+define('Estudiante', 3);
+```
+### Attributes deprecated in HTML5 should not be used
+
+>index.php
+
+```html
+<div class="container" align="center" style="padding:2%;">
+```
+
+```html
+<div class="container" align="center" style="padding:2%;">
+```
+>resources/views/login.php
+>
+```html
+<body background="../img/blue_background.jpg" style="background-size: cover">
+```
+
+```
+
+
+### Extra semicolons should be removed
+
+>resources/css/login.css
+
+```css
+width: 60% !important;;
+```
+```css
+width: 80% !important;;
+```
+
+### Variables should be declared explicitly
+
+>resources/css/login.css
+
+```php
+cadena = $("#login_form").serialize();
+```
+
+>resources/js/register.js
+
+```php
+cadena = $("#signup_form").serialize();
+```
+
+
+
 # Casos de Prueba
 
 ## **Función** *print_header($header) :*
