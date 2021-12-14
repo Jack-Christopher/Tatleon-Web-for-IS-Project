@@ -26,6 +26,51 @@ else
   // }
   else  if (correo_electronico.val() == "")
 ```
+***
+
+
+### Duplicate code
+>resources/js/verification.js
+```php
+function formEsValido() 
+{
+    var codigo = $("#verification_code");
+    var user_name = $("#username");
+    if (codigo.val() == "") 
+    {
+        var op = alertify.alert("Debe colocar su codigo de verificacion.");
+        return false;
+    }
+    else if (user_name.val() == "") 
+    {
+        var op = alertify.alert("Debe haberse registrado previamente.");
+        return false;
+    }
+
+    return true;
+}
+```
+**Corrección**
+```php
+function formEsValido() 
+{
+    var codigo = $("#verification_code");
+    var user_name = $("#username");
+    let op;
+    if (codigo.val() == "") 
+    {
+        op = alertify.alert("Debe colocar su codigo de verificacion.");
+        return false;
+    }
+    else if (user_name.val() == "") 
+    {
+        op = alertify.alert("Debe haberse registrado previamente.");
+        return false;
+    }
+
+    return true;
+}
+```
 
 
 
