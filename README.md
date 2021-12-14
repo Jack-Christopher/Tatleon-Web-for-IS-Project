@@ -1,4 +1,4 @@
-## Análisis de Code Smells con SonarQube
+## Análisis con SonarQube
 
 <img src="https://raw.githubusercontent.com/Jack-Christopher/Tatleon-Web/Juan/Screenshot_Sonarqube.png">
 
