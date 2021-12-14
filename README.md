@@ -195,7 +195,6 @@ define('Estudiante', 3);
 <body background="../img/blue_background.jpg" style="background-size: cover">
 ```
 
-```
 
 
 ### Extra semicolons should be removed
