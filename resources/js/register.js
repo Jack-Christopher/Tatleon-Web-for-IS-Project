@@ -9,45 +9,47 @@ function formEsValido()
 
     var emailRegex = new RegExp('.*@unsa.edu.pe');
 
+    var op;
+
     if (nombres.val() == "") 
     {
-        var op = alertify.alert("Debe colocar sus nombres.");
+        op = alertify.alert("Debe colocar sus nombres.");
         return false;
     }
     else if (apellidos.val() == "") 
     {
-        var op = alertify.alert("Debe colocar sus apellidos.");
+        op = alertify.alert("Debe colocar sus apellidos.");
         return false;
     }
 
     else if (correo_electronico.val() == "") 
     {
-        var op = alertify.alert("Debe colocar su correo electrónico.");
+        op = alertify.alert("Debe colocar su correo electrónico.");
         return false;
     }
     else if (!emailRegex.test(correo_electronico.val())) 
     {
-        var op = alertify.alert("Debe usar un Correo Institucional.");
+        op = alertify.alert("Debe usar un Correo Institucional.");
         return false;
     }
     else if (nombre_de_usuario.val() == "") 
     {
-        var op = alertify.alert("Debe colocar su nombre de usuario.");
+        op = alertify.alert("Debe colocar su nombre de usuario.");
         return false;
     }
     else if (clave_de_usuario.val() == "") 
     {
-        var op = alertify.alert("Debe colocar su clave de usuario.");
+        op = alertify.alert("Debe colocar su clave de usuario.");
         return false;
     }
     else if (clave_de_usuario2.val() == "") 
     {
-        var op = alertify.alert("Debe colocar su clave de usuario otra vez.");
+        op = alertify.alert("Debe colocar su clave de usuario otra vez.");
         return false;
     }
     else if (clave_de_usuario.val() != clave_de_usuario2.val()) 
     {
-        var op = alertify.alert("Las clave de usuario deben coincidir.");
+        op = alertify.alert("Las clave de usuario deben coincidir.");
         return false;
     }
 
