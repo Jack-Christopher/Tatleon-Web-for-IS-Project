@@ -28,6 +28,38 @@
         }
 
         //getters
+        public function getNombresCompletos()
+        {
+            if ((isset($this->nombres) && isset($this->apellidos)) && ($this->nombres != '' && $this->apellidos != '')) 
+            {
+                return $this->apellidos . ', ' . $this->nombres;
+            }
+            else
+            {
+                return 'N, N';
+            }
+        }
+
+        public function getEscuelas()
+        {
+            return $this->escuelas;
+        }
+
+        public function getAtributo($atributo)
+        {
+            // VERIFICAR SI EXISTE EL ATRIBUTO
+            if (property_exists($this, $atributo) && isset($this->$atributo)) 
+            {
+                return $this->$atributo;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
         public function getAll()
         {
             return [

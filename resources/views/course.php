@@ -2,6 +2,7 @@
     require_once('../../controller/templates.php'); 
     require_once('../../database/conexion.php');
     require_once('../../app/models/user.php');
+    require_once("../../app/models/header.php");
     session_start();
 
     $Conn = new Conexion();
@@ -15,7 +16,10 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header($curso_nombre, '', '', '../../public/favicon.ico'); ?>
+<?php 
+    $header = new Header($curso_nombre, '', '', '../../public/favicon.ico');
+    print_header($header);
+?>
 
 <body>
     <!-- Navbar con las opciones principales -->

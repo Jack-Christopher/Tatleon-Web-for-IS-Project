@@ -2,13 +2,17 @@
     require_once('../../controller/templates.php'); 
     require_once('../../database/conexion.php');
     require_once('../../app/models/user.php');
+    require_once("../../app/models/header.php");
     session_start();
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Recursos Compartidos', '', '', '../../public/favicon.ico'); ?>
+<?php 
+  $header = new Header('Recursos Compartidos', '', '', '../../public/favicon.ico');
+  print_header($header);
+?>
 
 <body>
     <!-- Navbar con las opciones principales -->

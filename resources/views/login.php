@@ -1,11 +1,15 @@
 <?php 
     require_once('../../controller/templates.php'); 
+    require_once("../../app/models/header.php");
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Inicio de Sesión', '../css/login.css', '../js/login.js', 'favicon.ico'); ?>
+<?php 
+    $header = new Header('Inicio de Sesión', '../css/login.css', '../js/login.js', 'favicon.ico');
+    print_header($header);
+?>
 
 
 <body background="../img/blue_background.jpg" style="background-size: cover">

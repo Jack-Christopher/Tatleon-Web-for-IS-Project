@@ -1,13 +1,17 @@
 <?php 
     require_once('../../controller/templates.php'); 
     require_once('../../app/models/user.php');
+    require_once("../../app/models/header.php");
     session_start();
 ?>
 
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Verificacion', '../css/login.css', '../js/verification.js', '../../public/favicon.ico'); ?>
+<?php 
+    $header = new Header('Verificacion', '../css/login.css', '../js/verification.js', '../../public/favicon.ico');
+    print_header($header);
+?>
 
 
 <body background="../img/blue_background.jpg" style="background-size: cover">

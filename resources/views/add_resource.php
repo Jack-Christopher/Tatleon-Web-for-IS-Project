@@ -1,6 +1,7 @@
 <?php 
     require_once('../../controller/templates.php');
     require_once('../../app/models/user.php');
+    require_once("../../app/models/header.php");
     require_once('../../database/conexion.php');
     session_start();
 ?>
@@ -8,7 +9,10 @@
 <!DOCTYPE html>
 <html>
 
-<?php print_header('Agregar recurso', '../css/login.css', '../js/add_resource.js', '../../public/favicon.ico'); ?>
+<?php 
+    $header = new Header('Agregar recurso', '../css/login.css', '../js/add_resource.js', '../../public/favicon.ico');
+    print_header($header);
+?>
 
 <body background="../img/blue_background.jpg" style="background-size: cover">
 
