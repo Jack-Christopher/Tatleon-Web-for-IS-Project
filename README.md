@@ -314,4 +314,5 @@ Que son el título y la ubicación de los archivos necesarios.
 <img src="readme/userGetAttributeTest.png">
 <img src="readme/userGetFullNameTest.png">
 
+## **Pruebas de Performance con Jmeter**
 
