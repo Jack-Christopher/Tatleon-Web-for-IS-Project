@@ -315,4 +315,9 @@ Que son el título y la ubicación de los archivos necesarios.
 <img src="readme/userGetFullNameTest.png">
 
 ## **Pruebas de Performance con Jmeter**
-
+Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la plataforma, como  la visualización de recursos, docentes y enlaces, lo que nos arrojó los siguientes resultados.
+![image](https://user-images.githubusercontent.com/64268942/147623987-eb3a6e3d-c00f-4d83-b729-ce0e581ffc4a.png)
+* Estadísticas de cada prueba
+![image](https://user-images.githubusercontent.com/64268942/147624090-862d1631-ac89-451d-8f98-72b82a1a10af.png)
+* Errores encontrados
+![image](https://user-images.githubusercontent.com/64268942/147624097-61b15ab4-3f69-4e03-b21b-ad6b1fbcb301.png)
