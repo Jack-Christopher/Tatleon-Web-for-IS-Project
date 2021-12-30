@@ -3,4 +3,4 @@ git config --global user.name "Jack Christopher"
 git pull origin master:Jack
 git add .
 git commit -m "deploy from Jenkins"
-git push origin master:Jack
+@REM git push origin master:Jack
