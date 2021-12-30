@@ -64,12 +64,7 @@ pipeline {
                 echo "Running ${env.BUILD_ID} ${env.BUILD_DISPLAY_NAME} on ${env.NODE_NAME} and JOB ${env.JOB_NAME}"
                 echo pwd()
                 dir('C:/xampp/htdocs/Tatleon') { 
-                    bat "git config --global user.email \"jhuaihuah@unsa.edu.pe\""
-                    bat "git config --global user.name \"Jack Christopher\""
-                    bat "git pull origin master:Jack"
-                    bat "git add ."
-                    bat "git commit -m \"deploy from Jenkins\""
-                    bat "git push origin master:Jack"
+                    bat "git_manager.bat"
                     // bat "for /D %s in (.\*) do @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
                     bat "for /D %s in (.\\*) do @if not \"%s\" == \".\\packages\" @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
                     bat "for %f in (.\\*) do @ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %f"
