@@ -321,3 +321,5 @@ Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la 
 ![image](https://user-images.githubusercontent.com/64268942/147624090-862d1631-ac89-451d-8f98-72b82a1a10af.png)
 * Errores encontrados
 ![image](https://user-images.githubusercontent.com/64268942/147624097-61b15ab4-3f69-4e03-b21b-ad6b1fbcb301.png)
+
+## **Pruebas funcionales con Selenium**
