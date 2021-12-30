@@ -305,7 +305,29 @@ Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la 
 ![image](https://user-images.githubusercontent.com/64268942/147624097-61b15ab4-3f69-4e03-b21b-ad6b1fbcb301.png)
 
 ## **Pruebas funcionales con Selenium**
-
+Se realizaron test funcionales con la herramienta de Selenium para la validación de emails, para lo cual se realizaron algunos tests
+```
+def test1(self): 
+        email = "rsan@unsa.edu.pe"
+        esperado = check(email)
+        print("TEST 1", email)
+        self.assertEqual(WebTester(email), esperado)
+    def test2(self): 
+        email = "asd"
+        esperado = check(email)
+        print("TEST 2", email)
+        self.assertEqual(WebTester(email), esperado)
+    def test3(self): 
+        email = "correo@gmail.com"
+        esperado = check(email)
+        print("TEST 3", email)
+        self.assertEqual(WebTester(email), esperado)
+    def test4(self): 
+        email = "esarmiento@unsa.edu.pe"
+        esperado = check(email)
+        print("TEST 4: ", email)
+        self.assertEqual(WebTester(email), esperado)
+```
 ## **Pruebas de seguridad con OWASP**
 Se realizaron las pruebas de seguridad usando Owasp habiendo subido el proyecto a la nube y estos fueron los resultados obtenidos:
 
