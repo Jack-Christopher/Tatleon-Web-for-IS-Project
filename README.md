@@ -323,7 +323,7 @@ Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la 
 ![image](https://user-images.githubusercontent.com/64268942/147624097-61b15ab4-3f69-4e03-b21b-ad6b1fbcb301.png)
 
 ## **Pruebas funcionales con Selenium**
-'''
+```
 def test1(self): 
         email = "rsan@unsa.edu.pe"
         esperado = check(email)
@@ -344,7 +344,7 @@ def test1(self):
         esperado = check(email)
         print("TEST 4: ", email)
         self.assertEqual(WebTester(email), esperado)
-'''
+```
 
 ## **Pruebas de seguridad con OWASP**
 Se realizaron las pruebas de seguridad usando Owasp habiendo subido el proyecto a la nube y estos fueron los resultados obtenidos:
