@@ -323,3 +323,18 @@ Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la 
 ![image](https://user-images.githubusercontent.com/64268942/147624097-61b15ab4-3f69-4e03-b21b-ad6b1fbcb301.png)
 
 ## **Pruebas funcionales con Selenium**
+
+## **Pruebas de seguridad con OWASP**
+Se realizaron las pruebas de seguridad usando Owasp habiendo subido el proyecto a la nube y estos fueron los resultados obtenidos:
+
+Escaneo activo:
+<img src="OWASP/EscaneoActivo.png">
+Alertas:
+<img src="OWASP/Alertas.png">
+URLS vulnerables [Spider Araña]:
+<img src="OWASP/SpiderArana.png">
+Mensajes [Spider Araña]:
+<img src="OWASP/SpiderAranaMensajes.png">
+Ajax Spider:
+<img src="OWASP/Ajax Spider.png">
+
