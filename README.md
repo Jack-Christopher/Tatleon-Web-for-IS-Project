@@ -328,13 +328,13 @@ Realizamos pruebas de performance con Jmeter en distintas funcionalidades de la 
 Se realizaron las pruebas de seguridad usando Owasp habiendo subido el proyecto a la nube y estos fueron los resultados obtenidos:
 
 Escaneo activo:
-<img src="OWASP/EscaneoActivo.png">
+<img src="OWASP/EscaneoActivo.JPG">
 Alertas:
-<img src="OWASP/Alertas.png">
+<img src="OWASP/Alertas.JPG">
 URLS vulnerables [Spider Araña]:
-<img src="OWASP/SpiderArana.png">
+<img src="OWASP/SpiderArana.JPG">
 Mensajes [Spider Araña]:
-<img src="OWASP/SpiderAranaMensajes.png">
+<img src="OWASP/SpiderAranaMensajes.JPG">
 Ajax Spider:
-<img src="OWASP/Ajax Spider.png">
+<img src="OWASP/Ajax Spider.JPG">
 
