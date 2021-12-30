@@ -66,7 +66,7 @@ pipeline {
                 dir('C:/xampp/htdocs/Tatleon') { 
                     bat "git_manager.bat"
                     // bat "for /D %s in (.\*) do @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
-                    bat "for /D %s in (.\\*) do @if not \"%s\" == \".\\packages\" @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
+                    bat "for /D %s in (.\\*) do @if not '%s' == '.\\packages' @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
                     bat "for %f in (.\\*) do @ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %f"
                 }
             }
