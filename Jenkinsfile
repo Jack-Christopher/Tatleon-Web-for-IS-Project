@@ -70,7 +70,6 @@ pipeline {
                     bat "git add ."
                     bat "git commit -m \"deploy from Jenkins\""
                     bat "git push origin master:Jack"
-
                     // bat "for /D %s in (.\*) do @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
                     bat "for /D %s in (.\\*) do @if not \"%s\" == \".\\packages\" @ ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %s"
                     bat "for %f in (.\\*) do @ncftpput -R -v -u \"epiz_29440885\" -p \"YD0FdeMPKhs\" ftpupload.net /htdocs %f"
